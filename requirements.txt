@@ -1,0 +1,19 @@
+# Data Science Basics
+pandas
+numpy
+matplotlib
+seaborn
+
+# Geospatial Analysis (The core for maritime)
+geopandas
+shapely
+pyproj
+folium        # 交互式地图展示
+
+# Satellite & APIs
+earthengine-api    # Google Earth Engine
+sentinelsat        # Sentinel-1 SAR 数据下载
+
+# Machine Learning
+scikit-learn
+torch              # 如果后续需要深度学习时空模型
