@@ -12,3 +12,9 @@ try:
             print(f"{row['VesselName']:<20} | {row['MMSI']:<10} | {row['VesselType']:<5} | {row['SOG']:<5} | {row['V_Mean']:<5} | {row['Z_Score']}")
 except FileNotFoundError:
     print("Error: anomalies_flagged.csv not found. Run v_dev_engine.py first.")
+
+# NEW: Export the report to a text file for the paper appendix
+    with open('output/forensic_summary.txt', 'w') as out_f:
+        out_f.write("--- FORENSIC ANOMALY SUMMARY ---\n")
+        # (Add your print logic here to write to file)
+    print("\n[+] Report exported to output/forensic_summary.txt")
